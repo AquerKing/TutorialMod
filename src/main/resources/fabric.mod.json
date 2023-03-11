@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "TutorialMod",
+	"version": "${version}",
+	"name": "TutorialMod",
+	"description": "",
+	"authors": [],
+	"contact": {
+		"repo": "https://github.com/aquer/TutorialMod"
+	},
+	"license": "All-Rights-Reserved",
+	"icon": "assets/TutorialMod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"org.tutorial.tutorialmod.client.TutorialModClient"
+		],
+		"main": [
+			"org.tutorial.tutorialmod.TutorialMod"
+		]
+	},
+	"mixins": [
+		"TutorialMod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.17",
+		"fabric": "*",
+		"minecraft": "1.16.5"
+	}
+}
